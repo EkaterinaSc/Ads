@@ -140,6 +140,11 @@ line-height: 24px;
 text-align: left;
 }
 
+/*.main {
+    background-color: #2A2F370F;
+    opacity: 6%;
+
+}*/
 .main-content {
     width: 1170px;
     margin: 0 auto;
@@ -223,13 +228,22 @@ background-color: #FFFFFF;
     left: 20px;
     bottom: 50px;
 }
-
-.item-picture {
-    margin:0%;
+.item-info {
+    width: 364px;
+    height: 248px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.item-info {
-    position:relative;
+.item-picture {
+    height: 200px;
+}
+
+.item-info-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .item-name {
@@ -255,8 +269,6 @@ text-align: left;
 }
 
 .date-vis {
-    position:absolute;
-    top: 150px;
     display: flex;
     justify-content: space-between;
     margin-left: 24px;
@@ -264,7 +276,6 @@ text-align: left;
     margin-right: 10px;
     color: #2A2F37;
     opacity: 40%;
-    font-family: Roboto;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
@@ -273,4 +284,73 @@ text-align: left;
 .eye-count {
     display: flex;
     gap: 10px;
+}
+
+.download-more {
+    position: relative;
+    height: 248px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    }
+
+.btn-download {
+    Width: 242px;
+    Height: 48px;
+    border: 1px solid #2A2F37;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    padding-left: 16px;
+    margin-top: 40px;
+    margin-bottom: 160px;
+}
+
+.svg {
+    position: absolute;
+    right: 920px;
+    top: 40px;
+    fill: red;
+}
+
+.footer {
+    background-color: #2A2F37;
+}
+
+.up-footer {
+    margin: 0 auto;
+    width: 1170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    width: 418px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 48px;
+}
+
+.footer-logo-wrapper {
+    width: 131px;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer-logo-link {
+    width: 91px;
+}
+
+.footer-info {
+    width: 287px;
+    padding-left: 40px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+    border-left: 1px solid #FFFFFF;
 }
